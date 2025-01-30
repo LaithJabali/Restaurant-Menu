@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .listItem {
   width: 378px;
   height: 50px;
@@ -45,4 +51,16 @@
 .arrowWrapper {
   position: absolute;
   right: 0;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29.26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 70px;
+  margin-top: 40px; 
 }
