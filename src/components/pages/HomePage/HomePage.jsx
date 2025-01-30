@@ -13,10 +13,9 @@ const englishLocations = ["Al Tireh", "Al Masyoun", "Al Irsal", "Nablus"];
 const arabicLocations = ["الطيرة", "المصيون", "الارسال", "نابلس"];
 
 const HomePage = () => {
-  const { language } = useLanguage(); // Get the current language from the context
-  const navigate = useNavigate(); // Hook to navigate between pages
+  const { language } = useLanguage(); 
+  const navigate = useNavigate(); 
 
-  // Choose locations based on the selected language
   const locations = language === "English" ? englishLocations : arabicLocations;
 
   return (
@@ -29,7 +28,7 @@ const HomePage = () => {
         renderItem={(item) => (
           <List.Item 
             className={styles.listItem} 
-            onClick={() => navigate(`/location/${item}`)} // Navigate to the location page
+            onClick={() => navigate(`/location/${item}`)}
           >
             <span className={styles.listText}>{item}</span>
             <div className={styles.arrowWrapper}>
