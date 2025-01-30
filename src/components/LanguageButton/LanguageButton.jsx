@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import styles from "./LanguageButton.module.css";
+import React from "react";
+import { useLanguage } from "./LanguageContext";
 
-const LanguageButton = ({ onLanguageChange }) => {
-  const [language, setLanguage] = useState("English");
-
-  const toggleLanguage = () => {
-    const newLanguage = language === "English" ? "Arabic" : "English";
-    setLanguage(newLanguage);
-    onLanguageChange(newLanguage);
-  };
+const LanguageButton = ({ className }) => {
+  const { language, toggleLanguage } = useLanguage();
 
   return (
-    <button className={styles.languageButton} onClick={toggleLanguage}>
-      {language}
+    <button className={className} onClick={toggleLanguage}>
+      {language === "English" ? "العربية" : "English"}
     </button>
   );
 };

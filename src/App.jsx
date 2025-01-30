@@ -1,14 +1,18 @@
-import LocationList from './components/pages/HomePage/HomePage'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./components/pages/HomePage/HomePage";
+import LocationPage from "./components/pages/LocationPage/LocationPage";
+import { LanguageProvider } from "./components/LanguageButton/LanguageContext";
 
-function App() {
-  
+const App = () => (
+  <LanguageProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/location/:location" element={<LocationPage />} />
+      </Routes>
+    </Router>
+  </LanguageProvider>
+);
 
-  return (
-    <>
-     <LocationList />
-    </>
-  )
-}
-
-export default App
+export default App;
