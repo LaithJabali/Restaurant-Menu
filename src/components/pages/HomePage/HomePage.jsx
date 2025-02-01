@@ -8,7 +8,6 @@ import Logo from "../../Logo/Logo";
 import Tittle from "../../Title/Title";
 import LanguageButton from "../../LanguageButton/LanguageButton";
 import { useLanguage } from "../../LanguageButton/LanguageContext";
-
 const englishLocations = ["Al Tireh", "Al Masyoun", "Al Irsal", "Nablus"];
 const arabicLocations = ["الطيرة", "المصيون", "الارسال", "نابلس"];
 
@@ -21,8 +20,8 @@ const HomePage = () => {
   return (
     <div className={styles.homePage}>
       <Logo />
+      
       <Tittle text={language === "English" ? "Select a Branch" : "اختر فرعًا"} className={styles.title} />
-
       <List
         dataSource={locations}
         renderItem={(item) => (

@@ -1,0 +1,71 @@
+.dishesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 34px;
+  margin-bottom: 30px;
+}
+
+.dishCard {
+  width: 184px;
+  height: 354px;
+  background: white;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dishImage {
+  width: 100%;
+  height: 184px;
+  border-radius: 8px;
+}
+
+.dishName {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  text-align: left;
+}
+
+.dishDescription {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  text-align: left;
+  color: #262627;
+}
+
+.dishPrice {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: left;
+  color: #ffbf00;
+}
+
+.dishTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag {
+  font-size: 16px;
+}
+
+.season {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.63px;
+  color: yellow;
+}
+
+.arabic {
+  text-align: right;
+}

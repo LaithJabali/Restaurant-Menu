@@ -7,12 +7,12 @@ import Tittle from "../../Title/Title";
 import MenuList from "../../MenuList/MenuList";
 import LanguageButton from "../../LanguageButton/LanguageButton";
 import { useLanguage } from "../../LanguageButton/LanguageContext";
+import SymbolSlider from "../../SymbolSlider/SymbolSlider";
 
 const LocationPage = () => {
   const { location } = useParams();
   const navigate = useNavigate();
   const { language } = useLanguage();
-
   const handleBackClick = () => navigate(-1);
 
   return (
@@ -27,6 +27,7 @@ const LocationPage = () => {
           text={language === "English" ? `${location} Branch` : `فرع ${location}`}
           className={styles.title}
         />
+        <SymbolSlider />
         <MenuList />
       </div>
     </div>
