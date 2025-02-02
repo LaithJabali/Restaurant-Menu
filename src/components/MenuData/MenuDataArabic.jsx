@@ -9,6 +9,24 @@ import dish8 from '../../assets/dish8.jpg';
 import dish9 from '../../assets/dish9.jpg';
 import dish10 from '../../assets/dish10.jpg';
 import dish11 from '../../assets/dish11.jpg';
+import {
+  faLeaf,
+  faPepperHot,
+  faUtensils,
+  faBreadSlice,
+  faCheese,
+  faDrumstickBite,
+  faFish,
+  faIceCream,
+  faPizzaSlice,
+  faHamburger,
+  faHotdog,
+  faBacon,
+  faLemon,
+  faSeedling,
+  faCocktail,
+  faCoffee,
+} from "@fortawesome/free-solid-svg-icons";
 
 const MenuDataArabic = {
   'وجبة الإفطار': [
@@ -18,7 +36,7 @@ const MenuDataArabic = {
       description: "مزيج لذيذ من الجرجير، الأفوكادو، السماق، التين، الطماطم، البصل، دبس الرمان، وزيت وزعتر المنقوشة التقليدية.",
       price: "₪35",
       image: dish1,
-      tags: ["🌱"],
+      tags: [faLeaf],
       seasonal: true,
     },
     {
@@ -27,7 +45,7 @@ const MenuDataArabic = {
       description: "جبنة حلومي مشوية تقدم مع الطماطم، الخيار، الجرجير، المايونيز، والطماطم المجففة على كعك القدس التقليدي.",
       price: { S: "₪25", L: "₪35" },
       image: dish2,
-      tags: ["🥒", "🌱"],
+      tags: [faCheese],
       seasonal: false,
     },
   ],
@@ -38,7 +56,7 @@ const MenuDataArabic = {
       description: "ورق عنب محشي بمزيج لذيذ من الأرز، الصنوبر، والأعشاب، يقدم مع جانب من اللبن الزبادي المنعش.",
       price: "₪20",
       image: dish3,
-      tags: ["🌱"],
+      tags: [faLeaf],
       seasonal: false,
     },
     {
@@ -47,7 +65,7 @@ const MenuDataArabic = {
       description: "حمص كريمي يقدم مع خبز البيتا الطازج، مزين بزيت الزيتون والبابريكا.",
       price: "₪15",
       image: dish4,
-      tags: ["🌱"],
+      tags: [faSeedling],
       seasonal: false,
     },
   ],
@@ -58,7 +76,7 @@ const MenuDataArabic = {
       description: "فطيرة لحم بقر طرية مغطاة بالخس، الطماطم، وجبن الشيدر، تقدم على خبز محمص.",
       price: "₪40",
       image: dish5,
-      tags: ["🍔"],
+      tags: [faHamburger],
       seasonal: false,
     },
     {
@@ -67,7 +85,7 @@ const MenuDataArabic = {
       description: "صدر دجاج مشوي مع سلطة سيزر وباكون مقرمش، يقدم على خبز طري.",
       price: "₪45",
       image: dish6,
-      tags: ["🍔"],
+      tags: [faDrumstickBite],
       seasonal: false,
     },
   ],
@@ -78,7 +96,7 @@ const MenuDataArabic = {
       description: "مزيج منعش من جبنة الفيتا، الزيتون، الطماطم، الخيار، والبصل، متبلة بالأوريغانو.",
       price: "₪30",
       image: dish7,
-      tags: ["🥗"],
+      tags: [faLeaf],
       seasonal: false,
     },
     {
@@ -87,7 +105,7 @@ const MenuDataArabic = {
       description: "خس روماني مقرمش مع صلصة سيزر، خبز محمص، وجبن بارميزان.",
       price: "₪35",
       image: dish8,
-      tags: ["🥗"],
+      tags: [faLeaf],
       seasonal: false,
     },
   ],
@@ -98,7 +116,7 @@ const MenuDataArabic = {
       description: "باستا إيطالية كلاسيكية تقدم مع صلصة لحم غنية ولذيذة.",
       price: "₪50",
       image: dish9,
-      tags: ["🍝"],
+      tags: [faUtensils],
       seasonal: false,
     },
     {
@@ -107,7 +125,7 @@ const MenuDataArabic = {
       description: "باستا بيني مغطاة بصلصة طماطم حارة مع ثوم ورقائق الفلفل الحار.",
       price: "₪45",
       image: dish10,
-      tags: ["🍝"],
+      tags: [faPepperHot],
       seasonal: false,
     },
   ],
@@ -118,7 +136,7 @@ const MenuDataArabic = {
       description: "بيتزا كلاسيكية مغطاة بالطماطم الطازجة، جبن الموزاريلا، والريحان.",
       price: "₪60",
       image: dish11,
-      tags: ["🍕"],
+      tags: [faPizzaSlice],
       seasonal: false,
     },
     {
@@ -127,7 +145,7 @@ const MenuDataArabic = {
       description: "بيتزا مفضلة مغطاة بشرائح البيبروني الحارة وجبن الموزاريلا.",
       price: "₪65",
       image: dish1,
-      tags: ["🍕"],
+      tags: [faPizzaSlice],
       seasonal: false,
     },
   ],
@@ -138,7 +156,7 @@ const MenuDataArabic = {
       description: "تشكيلة من لفائف السوشي الطازجة، النيغيري، والساشيمي.",
       price: "₪80",
       image: dish2,
-      tags: ["🍣"],
+      tags: [faFish],
       seasonal: false,
     },
     {
@@ -147,7 +165,7 @@ const MenuDataArabic = {
       description: "قطع دجاج طرية في صلصة كريمية وحارة على أساس الطماطم، تقدم مع أرز بسمتي.",
       price: "₪70",
       image: dish3,
-      tags: ["🍛"],
+      tags: [faDrumstickBite],
       seasonal: false,
     },
   ],
@@ -158,7 +176,7 @@ const MenuDataArabic = {
       description: "كعكة شوكولاتة دافئة مع مركز سائل، تقدم مع آيس كريم الفانيليا.",
       price: "₪30",
       image: dish4,
-      tags: ["🍰"],
+      tags: [faIceCream],
       seasonal: false,
     },
     {
@@ -167,7 +185,7 @@ const MenuDataArabic = {
       description: "معجنات حلوة مصنوعة من طبقات من الفيلو محشوة بالمكسرات ومحلّاة بالعسل.",
       price: "₪25",
       image: dish5,
-      tags: ["🍰"],
+      tags: [faBreadSlice],
       seasonal: false,
     },
   ],
@@ -178,7 +196,7 @@ const MenuDataArabic = {
       description: "آيس كريم كلاسيكي مصنوع من حبوب الفانيليا الحقيقية.",
       price: "₪20",
       image: dish6,
-      tags: ["🍦"],
+      tags: [faIceCream],
       seasonal: false,
     },
     {
@@ -187,47 +205,47 @@ const MenuDataArabic = {
       description: "آيس كريم الشوكولاتة الغني مغطى بصوص الشوكولاتة الساخن",
       price: "₪20",
       image: dish6,
-      tags: ["🍦"],
+      tags: [faLemon],
       seasonal: false,
     },
   ],
   'اللحوم': [
     {
-      id: 17,
+      id: 19,
       name: "آيس كريم الفانيليا",
       description: "آيس كريم كلاسيكي مصنوع من حبوب الفانيليا الحقيقية.",
       price: "₪20",
       image: dish6,
-      tags: ["🍦"],
+      tags: [faHotdog],
       seasonal: false,
     },
     {
-      id: 18,
+      id: 20,
       name: "سندويش الشوكولاتة",
       description: "آيس كريم الشوكولاتة الغني مغطى بصوص الشوكولاتة الساخن",
       price: "₪20",
       image: dish6,
-      tags: ["🍦"],
+      tags: [faBacon],
       seasonal: false,
     },
   ],
   'المشروبات': [
     {
-      id: 17,
+      id: 21,
       name: "آيس كريم الفانيليا",
       description: "آيس كريم كلاسيكي مصنوع من حبوب الفانيليا الحقيقية.",
       price: "₪20",
       image: dish6,
-      tags: ["🍦"],
+      tags: [faCoffee],
       seasonal: false,
     },
     {
-      id: 18,
+      id: 22,
       name: "سندويش الشوكولاتة",
       description: "آيس كريم الشوكولاتة الغني مغطى بصوص الشوكولاتة الساخن",
       price: "₪20",
       image: dish6,
-      tags: ["🍦"],
+      tags: [faCocktail],
       seasonal: false,
     },
   ]
