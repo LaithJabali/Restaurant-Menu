@@ -122,3 +122,11 @@
   text-decoration-skip-ink: none;
   color: #ffffff;
 }
+
+
+@media (max-width: 452px) {
+  .sliderPanel {
+
+    width: 100%;
+  }
+}

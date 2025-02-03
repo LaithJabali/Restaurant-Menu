@@ -22,7 +22,7 @@ const DishCard = ({ dish }) => {
       <div className={styles.dishTags}>
         {dish.tags.map((tag, i) => (
           <span key={i} className={styles.tag}>
-            <FontAwesomeIcon    icon={tag} />
+            <FontAwesomeIcon icon={tag} />
             {dish.seasonal && <span className={styles.season}> Seasonal</span>}
           </span>
         ))}

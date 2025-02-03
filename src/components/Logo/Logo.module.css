@@ -1,5 +1,12 @@
 .logo {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-  }  
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background: url('../../assets/logo.png') no-repeat center center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+      background: url('../../assets/DarkLogo.png') no-repeat center center;
+  }
+}
