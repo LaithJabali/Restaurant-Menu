@@ -39,6 +39,7 @@ const MenuDataEnglish = {
       image: dish1,
       tags: [faLeaf],
       seasonal: true,
+      available: false,
     },
     {
       id: 2,
@@ -49,6 +50,7 @@ const MenuDataEnglish = {
       image: dish2,
       tags: [faCheese],
       seasonal: false,
+      available: true,
     },
   ],
   Appetizers: [
@@ -61,6 +63,7 @@ const MenuDataEnglish = {
       image: dish3,
       tags: [faLeaf],
       seasonal: false,
+      available: true,
     },
     {
       id: 4,
@@ -71,6 +74,7 @@ const MenuDataEnglish = {
       image: dish4,
       tags: [faSeedling],
       seasonal: false,
+      available: true,
     },
   ],
   Burger: [
@@ -83,6 +87,7 @@ const MenuDataEnglish = {
       image: dish5,
       tags: [faHamburger],
       seasonal: false,
+      available: true,
     },
     {
       id: 6,
@@ -93,6 +98,7 @@ const MenuDataEnglish = {
       image: dish6,
       tags: [faDrumstickBite],
       seasonal: false,
+      available: true,
     },
   ],
   Salad: [
@@ -105,6 +111,7 @@ const MenuDataEnglish = {
       image: dish7,
       tags: [faLeaf],
       seasonal: false,
+      available: true,
     },
     {
       id: 8,
@@ -115,6 +122,7 @@ const MenuDataEnglish = {
       image: dish8,
       tags: [faLeaf],
       seasonal: false,
+      available: true,
     },
   ],
   Pasta: [
@@ -126,6 +134,7 @@ const MenuDataEnglish = {
       image: dish9,
       tags: [faUtensils],
       seasonal: false,
+      available: true,
     },
     {
       id: 10,
@@ -136,6 +145,7 @@ const MenuDataEnglish = {
       image: dish10,
       tags: [faPepperHot],
       seasonal: false,
+      available: true,
     },
   ],
   Pizza: [
@@ -148,6 +158,7 @@ const MenuDataEnglish = {
       image: dish11,
       tags: [faPizzaSlice],
       seasonal: false,
+      available: true,
     },
     {
       id: 12,
@@ -158,6 +169,7 @@ const MenuDataEnglish = {
       image: dish1,
       tags: [faPizzaSlice],
       seasonal: false,
+      available: true,
     },
   ],
   "International Meals": [
@@ -169,6 +181,7 @@ const MenuDataEnglish = {
       image: dish2,
       tags: [faFish],
       seasonal: false,
+      available: true,
     },
     {
       id: 14,
@@ -179,6 +192,7 @@ const MenuDataEnglish = {
       image: dish3,
       tags: [faDrumstickBite],
       seasonal: false,
+      available: true,
     },
   ],
   Dessert: [
@@ -191,6 +205,7 @@ const MenuDataEnglish = {
       image: dish4,
       tags: [faIceCream],
       seasonal: false,
+      available: true,
     },
     {
       id: 16,
@@ -201,6 +216,7 @@ const MenuDataEnglish = {
       image: dish5,
       tags: [faBreadSlice],
       seasonal: false,
+      available: true,
     },
   ],
   "Ice Cream": [
@@ -212,6 +228,7 @@ const MenuDataEnglish = {
       image: dish6,
       tags: [faIceCream],
       seasonal: false,
+      available: true,
     },
     {
          id: 18,
@@ -221,6 +238,7 @@ const MenuDataEnglish = {
          image: dish7,
          tags: [faLemon],
          seasonal: false,
+         available: true,
        },
      ],
      Meat: [
@@ -232,6 +250,7 @@ const MenuDataEnglish = {
          image: dish6,
          tags: [faHotdog],
          seasonal: false,
+         available: true,
        },
        {
          id: 20,
@@ -241,6 +260,7 @@ const MenuDataEnglish = {
          image: dish7,
          tags: [faBacon],
          seasonal: false,
+         available: true,
        },
      ],
      Drinks: [
@@ -252,6 +272,7 @@ const MenuDataEnglish = {
          image: dish6,
          tags: [faCoffee],
          seasonal: false,
+         available: false,
        },
        {
          id: 22,
@@ -261,6 +282,7 @@ const MenuDataEnglish = {
          image: dish7,
          tags: [faCocktail],
          seasonal: false,
+         available: true,
        },
       
      ],

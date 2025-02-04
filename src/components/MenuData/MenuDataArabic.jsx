@@ -38,6 +38,7 @@ const MenuDataArabic = {
       image: dish1,
       tags: [faLeaf],
       seasonal: true,
+      available: false,
     },
     {
       id: 2,
@@ -46,7 +47,8 @@ const MenuDataArabic = {
       price: { S: "₪25", L: "₪35" },
       image: dish2,
       tags: [faCheese],
-      seasonal: false,
+      seasonal: true,
+      available: true,
     },
   ],
   'المقبلات': [
@@ -57,7 +59,8 @@ const MenuDataArabic = {
       price: "₪20",
       image: dish3,
       tags: [faLeaf],
-      seasonal: false,
+      seasonal: true,
+      available: true,
     },
     {
       id: 4,
@@ -67,6 +70,7 @@ const MenuDataArabic = {
       image: dish4,
       tags: [faSeedling],
       seasonal: false,
+      available: true,
     },
   ],
   'البرغر': [
@@ -78,6 +82,7 @@ const MenuDataArabic = {
       image: dish5,
       tags: [faHamburger],
       seasonal: false,
+      available: true,
     },
     {
       id: 6,
@@ -87,6 +92,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faDrumstickBite],
       seasonal: false,
+      available: true,
     },
   ],
   'السلطات': [
@@ -98,6 +104,7 @@ const MenuDataArabic = {
       image: dish7,
       tags: [faLeaf],
       seasonal: false,
+      available: true,
     },
     {
       id: 8,
@@ -107,6 +114,7 @@ const MenuDataArabic = {
       image: dish8,
       tags: [faLeaf],
       seasonal: false,
+      available: true,
     },
   ],
   'المعكرونة': [
@@ -118,6 +126,7 @@ const MenuDataArabic = {
       image: dish9,
       tags: [faUtensils],
       seasonal: false,
+      available: true,
     },
     {
       id: 10,
@@ -127,6 +136,7 @@ const MenuDataArabic = {
       image: dish10,
       tags: [faPepperHot],
       seasonal: false,
+      available: true,
     },
   ],
   'البيتزا': [
@@ -138,6 +148,7 @@ const MenuDataArabic = {
       image: dish11,
       tags: [faPizzaSlice],
       seasonal: false,
+      available: true,
     },
     {
       id: 12,
@@ -147,6 +158,7 @@ const MenuDataArabic = {
       image: dish1,
       tags: [faPizzaSlice],
       seasonal: false,
+      available: true,
     },
   ],
   'الوجبات العالمية': [
@@ -158,6 +170,7 @@ const MenuDataArabic = {
       image: dish2,
       tags: [faFish],
       seasonal: false,
+      available: true,
     },
     {
       id: 14,
@@ -167,6 +180,7 @@ const MenuDataArabic = {
       image: dish3,
       tags: [faDrumstickBite],
       seasonal: false,
+      available: true,
     },
   ],
   'الحلويات': [
@@ -178,6 +192,7 @@ const MenuDataArabic = {
       image: dish4,
       tags: [faIceCream],
       seasonal: false,
+      available: true,
     },
     {
       id: 16,
@@ -187,6 +202,7 @@ const MenuDataArabic = {
       image: dish5,
       tags: [faBreadSlice],
       seasonal: false,
+      available: true,
     },
   ],
   'الآيس كريم': [
@@ -198,6 +214,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faIceCream],
       seasonal: false,
+      available: true,
     },
     {
       id: 18,
@@ -207,6 +224,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faLemon],
       seasonal: false,
+      available: true,
     },
   ],
   'اللحوم': [
@@ -218,6 +236,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faHotdog],
       seasonal: false,
+      available: true,
     },
     {
       id: 20,
@@ -227,6 +246,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faBacon],
       seasonal: false,
+      available: true,
     },
   ],
   'المشروبات': [
@@ -238,6 +258,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faCoffee],
       seasonal: false,
+      available: true,
     },
     {
       id: 22,
@@ -247,6 +268,7 @@ const MenuDataArabic = {
       image: dish6,
       tags: [faCocktail],
       seasonal: false,
+      available: true,
     },
   ]
 };

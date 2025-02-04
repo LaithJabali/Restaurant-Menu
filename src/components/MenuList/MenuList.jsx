@@ -3,6 +3,7 @@ import styles from "./MenuList.module.css";
 import { useLanguage } from "../LanguageButton/LanguageContext";
 import Tittle from "../Title/Title";
 import DishList from "../DishList/DishList";
+import MenuTable from "../AdminMenu/MenuTable";
 
 const MENU_ITEMS = {
   English: [
@@ -15,7 +16,7 @@ const MENU_ITEMS = {
   ],
 };
 
-const MenuList = () => {
+const MenuList = ({isAdmin}) => {
   const { language } = useLanguage();
   const menuItems = MENU_ITEMS[language] || MENU_ITEMS["English"];
   const [selectedCategory, setSelectedCategory] = useState(menuItems[0]);
@@ -36,16 +37,16 @@ const MenuList = () => {
 
       <Tittle text={selectedCategory} className={`${styles.title} ${language === "Arabic" ? styles.arabic : ""}`} />
 
-      {selectedCategory === menuItems[0] && (
+      {selectedCategory === menuItems[0] && !isAdmin ? (
         <Tittle
           text={language === "English"
             ? "Breakfast serving time 8:00 AM - 2:00 PM"
             : "وقت تقديم وجبة الإفطار من الساعة 8:00 صباحًا حتى الساعة 2:00 ظهرًا"}
           className={`${styles.breakFastTime} ${language === "Arabic" ? styles.arabic : ""}`}
         />
-      )}
+      ) : null}
 
-      <DishList selectedCategory={selectedCategory} />
+    {isAdmin ? <MenuTable selectedCategory={selectedCategory} /> : <DishList selectedCategory={selectedCategory} />}
     </div>
   );
 };

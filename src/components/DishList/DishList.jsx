@@ -14,12 +14,15 @@ const DishList = ({ selectedCategory }) => {
 
   return (
     <div className={styles.dishesContainer}>
-      {dishes && dishes.length > 0 ? (
-        dishes.map((dish) => <DishCard key={dish.id} dish={dish} />)
-      ) : (
-        <p className={styles.noDishes}>No dishes available</p>
-      )}
-    </div>
+    {dishes && dishes.length > 0 ? (
+      dishes.map((dish) =>
+        dish.available ? <DishCard key={dish.id} dish={dish} /> : null
+      )
+    ) : (
+      <p className={styles.noDishes}>No dishes available</p>
+    )}
+  </div>
+  
   );
 };
 
