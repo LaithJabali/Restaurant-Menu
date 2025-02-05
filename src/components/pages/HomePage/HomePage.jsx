@@ -8,21 +8,17 @@ import Logo from "../../Logo/Logo";
 import Tittle from "../../Title/Title";
 import LanguageButton from "../../LanguageButton/LanguageButton";
 import { useLanguage } from "../../LanguageButton/LanguageContext";
-import {usePrefersDarkMode} from "../../Logo/usePrefersDarkMode";
 const englishLocations = ["Al Tireh", "Al Masyoun", "Al Irsal", "Nablus"];
 const arabicLocations = ["الطيرة", "المصيون", "الارسال", "نابلس"];
 
 const HomePage = () => {
   const { language } = useLanguage(); 
   const navigate = useNavigate(); 
-  const isDarkMode = usePrefersDarkMode();
-
   const locations = language === "English" ? englishLocations : arabicLocations;
 
   return (
     <div className={styles.homePage}>
-      <Logo />
-      
+      <Logo /> 
       <Tittle text={language === "English" ? "Select a Branch" : "اختر فرعًا"} className={styles.title} />
       <List
         dataSource={locations}
@@ -33,7 +29,7 @@ const HomePage = () => {
           >
             <span className={styles.listText}>{item}</span>
             <div className={styles.arrowWrapper}>
-              <ArrowRightOutlined className={`${isDarkMode ? styles.arrowIcon : styles.arrowIconDark}`} />
+              <ArrowRightOutlined className={styles.arrowIcon} />
               
             </div>
           </List.Item>
