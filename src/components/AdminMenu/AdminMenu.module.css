@@ -1,8 +1,19 @@
 .page {
   width: 100%;
-  margin: 20px;
   background-color: white;
-  border-radius: 20px;
+  max-height: 100%;
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
 }
 
 .menuContainer {
@@ -63,6 +74,7 @@
 }
 
 .dishField {
+  margin: 10px;
   margin-bottom: 15px;
 }
 
@@ -77,6 +89,7 @@
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 .dishField textarea {
@@ -101,4 +114,13 @@
 
 .addDish:hover {
   background-color: #e0e0e0;
+}
+
+@media (max-width: 482px) {
+  .dishCard {
+    width: 155px;
+  }
+  .dishDetailsPopup {
+    width: 70%;
+  }
 }
